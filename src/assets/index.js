@@ -34,6 +34,7 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import threedtshirt from './3dtshirt.png';
 import aiimagegenerator from './ai_image_generator.png';
+import cafelofi from './cafelofi.png';
 
 export {
   logo,
@@ -68,5 +69,6 @@ export {
   jobit,
   tripguide,  
   threedtshirt,
-  aiimagegenerator
+  aiimagegenerator,
+  cafelofi
 };

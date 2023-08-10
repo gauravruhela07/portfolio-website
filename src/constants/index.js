@@ -18,6 +18,7 @@ import {
     jobit,
     tripguide,   
     aiimagegenerator, 
+    cafelofi,
     springboot,
     kafka,
     java,
@@ -213,27 +214,27 @@ import {
       image: aiimagegenerator,
       source_code_link: "https://github.com/gauravruhela07/image_generator",
     },
-    // {
-    //   name: "Trip Guide",
-    //   description:
-    //     "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    //   tags: [
-    //     {
-    //       name: "nextjs",
-    //       color: "blue-text-gradient",
-    //     },
-    //     {
-    //       name: "supabase",
-    //       color: "green-text-gradient",
-    //     },
-    //     {
-    //       name: "css",
-    //       color: "pink-text-gradient",
-    //     },
-    //   ],
-    //   image: tripguide,
-    //   source_code_link: "https://github.com/",
-    // },
+    {
+      name: "CafeLofi",
+      description:
+        "Now focus on your work with a collection of lofi music.",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "tailwind",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: cafelofi,
+      source_code_link: "https://github.com/gauravruhela07/cafe-lofi",
+    },
   ];
   
   export { services, technologies, experiences, testimonials, projects };
