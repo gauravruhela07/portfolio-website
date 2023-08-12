@@ -18,6 +18,7 @@ import {
     jobit,
     tripguide,   
     aiimagegenerator, 
+    cafelofi,
     springboot,
     kafka,
     java,
@@ -37,6 +38,11 @@ import {
       id: "contact",
       title: "Contact",
     },
+    {
+      id: "resume",
+      title: "Resume",
+      url:'./GauravRuhelaCV.pdf'
+    }
   ];
   
   const services = [
@@ -136,9 +142,9 @@ import {
       date: "May 2021 - Present",
       points: [
         "Streamlined the creation logic of Stock Transfer Notes (STNs) used for transferring inventory between warehouses, resulting in a 10x reduction in overall processing time and a 3x decrease in infrastructure costs. Achieved this by evenly distributing the workload across multiple smaller containers.",
-        "Configuration of Jenkins job for deploying multiple tasks in a pipeline improving the overall deployment time by 3x.",
-        "Designed and implemented a robust Petty Cash Management System specifically tailored for efficient tracking and management of daily expenses within a warehouse environment. Saving on an average of 5 Lakhs INR per month.",
         "Participating in code reviews and providing constructive feedback to other developers.",
+        "Devised and executed automated logistic partner payouts, factoring in incentives and debits, slashing processing from 1.5 weeks to a mere 1 second",
+        "Led a team consisting of two backend engineers and one frontend engineer to successfully implement warehouse management system features. This initiative improved manpower visibility and enhanced the tracking of inventory movement."
       ],
     }
   ];
@@ -213,27 +219,27 @@ import {
       image: aiimagegenerator,
       source_code_link: "https://github.com/gauravruhela07/image_generator",
     },
-    // {
-    //   name: "Trip Guide",
-    //   description:
-    //     "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    //   tags: [
-    //     {
-    //       name: "nextjs",
-    //       color: "blue-text-gradient",
-    //     },
-    //     {
-    //       name: "supabase",
-    //       color: "green-text-gradient",
-    //     },
-    //     {
-    //       name: "css",
-    //       color: "pink-text-gradient",
-    //     },
-    //   ],
-    //   image: tripguide,
-    //   source_code_link: "https://github.com/",
-    // },
+    {
+      name: "CafeLofi",
+      description:
+        "Now focus on your work with a collection of lofi music.",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "tailwind",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: cafelofi,
+      source_code_link: "https://github.com/gauravruhela07/cafe-lofi",
+    },
   ];
   
   export { services, technologies, experiences, testimonials, projects };
