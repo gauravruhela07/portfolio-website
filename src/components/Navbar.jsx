@@ -10,6 +10,17 @@ const Navbar = () => {
   const [active, setActive] = useState('');
   const [toggle, setToggle] = useState(false);
 
+  const downloadResume = () => {
+    console.log('clicked');
+    const downloadLink = document.createElement('a');
+    downloadLink.href = 'public/GauravRuhelaCV.pdf';
+    downloadLink.download = 'GauravRuhelaCV.pdf';
+    downloadLink.style.display = 'none';
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
+}
+
   return (
     <nav
       className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20`}
@@ -36,8 +47,13 @@ const Navbar = () => {
                   : "text-secondary"
               } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(link.title)}
-            >
-              <a href={`#${link.id}`}>{link.title}</a>
+            >              
+              {link.id==='resume' ? (
+                  <div onClick={downloadResume}>{link.title}</div>
+                ) : (                      
+                  <a href={`#${link.id}`}>{link.title}</a>                  
+                )
+              }
             </li>
           ))}
         </ul>
@@ -65,7 +81,12 @@ const Navbar = () => {
                     setActive(link.title)
                   }}
                 >
-                  <a href={`#${link.id}`}>{link.title}</a>
+                  {link.id==='resume' ? (
+                      <div onClick={() => downloadResume}/>
+                    ) : (                      
+                      <a href={`#${link.id}`}>{link.title}</a>                      
+                    )
+                  }
                 </li>
               ))}
             </ul>
