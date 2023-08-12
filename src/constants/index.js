@@ -40,8 +40,7 @@ import {
     },
     {
       id: "resume",
-      title: "Resume",
-      url:'./GauravRuhelaCV.pdf'
+      title: "Resume",      
     }
   ];
   
@@ -242,4 +241,6 @@ import {
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  const resumeLink = "https://drive.google.com/file/d/1CxZC7Gm8d33XHKliI2TO2N5sGxisdcwN/view?usp=sharing";
+
+  export { services, technologies, experiences, testimonials, projects, resumeLink };

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import { styles } from '../styles.js';
-import { navLinks } from '../constants';
+import { navLinks, resumeLink } from '../constants';
 import { logo, menu, close } from '../assets';
 
 const Navbar = () => {
@@ -10,16 +10,9 @@ const Navbar = () => {
   const [active, setActive] = useState('');
   const [toggle, setToggle] = useState(false);
 
-  const downloadResume = () => {
-    console.log('clicked');
-    const downloadLink = document.createElement('a');
-    downloadLink.href = 'public/GauravRuhelaCV.pdf';
-    downloadLink.download = 'GauravRuhelaCV.pdf';
-    downloadLink.style.display = 'none';
-    document.body.appendChild(downloadLink);
-    downloadLink.click();
-    document.body.removeChild(downloadLink);
-}
+  const handleResumeClick = () => {
+    window.open(resumeLink, "_blank");
+  }
 
   return (
     <nav
@@ -49,7 +42,7 @@ const Navbar = () => {
               onClick={() => setActive(link.title)}
             >              
               {link.id==='resume' ? (
-                  <div onClick={downloadResume}>{link.title}</div>
+                  <div onClick={handleResumeClick}>{link.title}</div>
                 ) : (                      
                   <a href={`#${link.id}`}>{link.title}</a>                  
                 )
@@ -82,7 +75,7 @@ const Navbar = () => {
                   }}
                 >
                   {link.id==='resume' ? (
-                      <div onClick={() => downloadResume}/>
+                      <div onClick={handleResumeClick}>{link.title}</div>
                     ) : (                      
                       <a href={`#${link.id}`}>{link.title}</a>                      
                     )
