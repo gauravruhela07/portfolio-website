@@ -38,7 +38,7 @@ const Navbar = () => {
                 active === link.title 
                   ? "text-white"
                   : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
+              } hover:text-white text-[18px] font-medium cursor-pointer nav-item`}
               onClick={() => setActive(link.title)}
             >              
               {link.id==='resume' ? (
