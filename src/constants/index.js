@@ -241,6 +241,6 @@ import {
     },
   ];
   
-  const resumeLink = "https://drive.google.com/file/d/1CxZC7Gm8d33XHKliI2TO2N5sGxisdcwN/view?usp=sharing";
+  const resumeLink = "https://drive.google.com/file/d/1gKqJmuck6c2CcJNWpZerHv4cCDH54q7s/view?usp=sharing";
 
   export { services, technologies, experiences, testimonials, projects, resumeLink };
